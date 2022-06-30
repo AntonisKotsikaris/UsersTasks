@@ -39,15 +39,15 @@
 <table>
     <table class="table table-striped">
         <tr  class="bg-info">
-         <th>Tasks</th>
+            <th>Tasks</th>
             <th> </th>
         </tr>
-    <tbody id ="Users">
+        <tbody id ="Users">
 
 
-    </tbody>
-</table>
-<script>
+        </tbody>
+    </table>
+    <script>
 
 $(document).ready(function () {
        $.getJSON("http://localhost:8080/User/allusers",
@@ -87,7 +87,7 @@ $(document).ready(function () {
             // $('#Users').html(JSON.stringify(data));
             var tableRow = "<tr><td>"
             
-            for (i = 0; i<7; i++){
+            for (i = 0; i<50; i++){
                 var element = tableRow + data.content[i].title + "</td><td> </td></tr>"
                 $('#Users').append(element);
             }
