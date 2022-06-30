@@ -52,7 +52,7 @@ public class TaskController {
 @GetMapping (path = "/usersTasks/{id}")
 public @ResponseBody Iterable <Task> getUserTasks(@PathVariable Long id){
 
-    Pageable taskPage = (Pageable) PageRequest.of(0, 10);
+    Pageable taskPage = (Pageable) PageRequest.of(0, 50);
 
     Page<Task> tasksByUserId = UserRepository.findTasksByUserId(id, taskPage);
 
