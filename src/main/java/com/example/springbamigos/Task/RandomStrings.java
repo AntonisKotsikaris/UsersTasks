@@ -78,7 +78,7 @@ public class RandomStrings {
                 } catch (Exception e) {
                     System.out.println(e);
                 }
-                conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/ToDO", "root", "As400eer2003!");
+                conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/ToDO", "root", "");
                 System.out.println("Connection is created successfully:");
                 stmt = (Statement) conn.createStatement();
 
