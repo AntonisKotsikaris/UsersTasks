@@ -14,7 +14,7 @@ public class InserData {
             } catch (Exception e) {
                 System.out.println(e);
             }
-            conn = (Connection) DriverManager.getConnection("http://localhost:8080/User/allusers", "root", "As400eer2003!");
+            conn = (Connection) DriverManager.getConnection("http://localhost:8080/User/allusers", "root", "");
             System.out.println("Connection is created successfully:");
             stmt = (Statement) conn.createStatement();
 
